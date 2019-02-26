@@ -225,7 +225,6 @@ namespace ImageProcessor
             HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create(WebReqPart1 + coordinates + WebReqPart2);
             HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
 
-           
             using (StreamReader stream = new StreamReader(
                  resp.GetResponseStream(), Encoding.UTF8))
             {
